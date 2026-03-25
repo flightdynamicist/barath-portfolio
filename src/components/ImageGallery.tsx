@@ -6,8 +6,34 @@ import mock02 from "../assets/team/02.jpeg";
 import mock03 from "../assets/team/03.jpeg";
 import mock04 from "../assets/team/04.jpeg";
 
+interface ImageItem {
+  src: string;
+  caption: string;
+  description: string;
+}
 
-const images: string[] = [mock01, mock02, mock03, mock04];
+const images: ImageItem[] = [
+  {
+    src: mock01,
+    caption: "FlightDynamics Team",
+    description: "Our core team working on lunar lander GNC simulations.",
+  },
+  {
+    src: mock02,
+    caption: "Mission Simulation Session",
+    description: "Simulating mission scenarios for Earth observation and lunar missions.",
+  },
+  {
+    src: mock03,
+    caption: "Satellite Testing Day",
+    description: "Testing satellite subsystems including AOCS, Payload, and Propulsion.",
+  },
+  {
+    src: mock04,
+    caption: "Team Brainstorming",
+    description: "Collaborating on system architecture, risk management, and mission design.",
+  },
+];
 
 const ImageGallery: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -21,6 +47,7 @@ const ImageGallery: React.FC = () => {
     }
   };
 
+  // Escape key closes overlay
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeOverlay();
@@ -29,11 +56,10 @@ const ImageGallery: React.FC = () => {
     return () => window.removeEventListener("keydown", handleKey);
   }, []);
 
+  // Auto-close overlay after 60s
   useEffect(() => {
     if (selectedIndex !== null) {
-      autoCloseTimer.current = window.setTimeout(() => {
-        closeOverlay();
-      }, 60000);
+      autoCloseTimer.current = window.setTimeout(closeOverlay, 60000);
     }
     return () => {
       if (autoCloseTimer.current) clearTimeout(autoCloseTimer.current);
@@ -43,24 +69,43 @@ const ImageGallery: React.FC = () => {
   return (
     <>
       <div className="gallery-container">
-        {images.map((src, index) => (
-          <img
+        {images.map((image, index) => (
+          <div
             key={index}
-            src={src}
-            className="thumbnail"
+            className="thumbnail-wrapper"
             onClick={() => setSelectedIndex(index)}
-            alt={`thumb-${index}`}
-          />
+          >
+            <img
+              src={image.src}
+              className="thumbnail"
+              alt={`thumb-${index}`}
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+            />
+          </div>
         ))}
       </div>
 
       {selectedIndex !== null && (
         <div className="overlay" onClick={closeOverlay}>
-          <img
-            src={images[selectedIndex]}
-            className="full-image"
-            alt="expanded"
-          />
+          {/* Caption at top */}
+          <div className="overlay-caption">
+            {images[selectedIndex].caption}
+          </div>
+
+          {/* Full image + description */}
+          <div className="full-image-wrapper">
+            <img
+              src={images[selectedIndex].src}
+              className="full-image"
+              alt="expanded"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+            />
+            <div className="overlay-description">
+              {images[selectedIndex].description}
+            </div>
+          </div>
         </div>
       )}
     </>
