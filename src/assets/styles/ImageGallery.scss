@@ -3,50 +3,61 @@
   width: 100%;
 }
 
+/* --- Thumbnails --- */
 .thumbnail-row {
   display: flex;
   gap: 12px;
   justify-content: center;
   padding: 10px 0;
-  flex-wrap: wrap;    // <--- important
+  flex-wrap: wrap;  // keep them neat on smaller screens
 }
 
 .thumbnail {
-  width: 120px;        // <--- smaller thumbnails
+  width: 120px;     // keeps thumbnails small
   height: auto;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   }
 }
 
+/* --- Fullscreen Overlay --- */
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;                       // shorter syntax for top/left/bottom/right = 0
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(6px);
-  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeIn 0.2s ease;
-  z-index: 9999;   // 🔥 THIS FIXES THE ISSUE OVERLAY OF OTHER COMPONENTS
 
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.65);
+
+  animation: fadeIn 0.2s ease forwards;
+  z-index: 9999;                  // keeps EVERYTHING underneath
 }
 
+/* --- Full Image View --- */
 .full-image {
   max-width: 85%;
   max-height: 85%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45);
+  animation: zoomIn 0.25s ease;
 }
 
+/* --- Animations --- */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
