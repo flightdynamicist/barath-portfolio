@@ -1,0 +1,52 @@
+.gallery-container {
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 10px 0;
+  flex-wrap: wrap;    // <--- important
+}
+
+.thumbnail {
+  width: 120px;        // <--- smaller thumbnails
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+  z-index: 9999;   // 🔥 THIS FIXES THE ISSUE OVERLAY OF OTHER COMPONENTS
+
+}
+
+.full-image {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
