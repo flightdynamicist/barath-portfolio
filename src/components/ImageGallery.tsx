@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../assets/styles/ImageGallery.scss";
-
-import mock02 from "../assets/team/02.jpeg";
-import mock03 from "../assets/team/03.jpeg";
-import mock04 from "../assets/team/04.jpeg";
 const mock01 = "https://m.media-amazon.com/images/I/71GqMTCFWtL._UF1000,1000_QL80_.jpg";
 
 interface ImageItem {
@@ -17,21 +13,6 @@ const images: ImageItem[] = [
     src: mock01,
     caption: "FlightDynamics Team",
     description: "Our core team working on lunar lander GNC simulations.",
-  },
-  {
-    src: mock02,
-    caption: "Mission Simulation Session",
-    description: "Simulating mission scenarios for Earth observation and lunar missions.",
-  },
-  {
-    src: mock03,
-    caption: "Satellite Testing Day",
-    description: "Testing satellite subsystems including AOCS, Payload, and Propulsion.",
-  },
-  {
-    src: mock04,
-    caption: "Team Brainstorming",
-    description: "Collaborating on system architecture, risk management, and mission design.",
   },
 ];
 
