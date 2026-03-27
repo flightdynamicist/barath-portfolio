@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../assets/styles/ImageGallery.scss";
 
-import mock01 from "../assets/team/01.jpg";
 import mock02 from "../assets/team/02.jpeg";
 import mock03 from "../assets/team/03.jpeg";
 import mock04 from "../assets/team/04.jpeg";
+const mock01 = "https://m.media-amazon.com/images/I/71GqMTCFWtL._UF1000,1000_QL80_.jpg";
 
 interface ImageItem {
   src: string;

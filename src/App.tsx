@@ -8,7 +8,6 @@ import {
   Navigation,
   Footer,
 } from "./components";
-import ImageGallery from "./components/ImageGallery";
 import FadeIn from './components/FadeIn';
 import './index.scss';
 
@@ -35,7 +34,6 @@ function App() {
             <Expertise/>
             <Timeline/>
             <Project/>
-            <ImageGallery/>
             <Contact/>
         </FadeIn>
         <Footer />
