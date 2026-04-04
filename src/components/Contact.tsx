@@ -33,14 +33,14 @@ function Contact() {
     if (isNameEmpty || isEmailEmpty || isMessageEmpty) return;
 
     emailjs.send(
-      'service_q2eec35',     // 🔴 replace
-      'template_ojpf7bq',    // 🔴 replace
+      'service_q2eec35',     // 🔴 replace Service ID
+      'template_ojpf7bq',    // 🔴 replace Template ID
       {
         name: name,
         email: email,
         message: message
       },
-      'MYnCqrMk9mmP32Omf'      // 🔴 replace
+      'MYnCqrMk9mmP32Omf'      // 🔴 replace Public Key
     )
     .then(() => {
       alert("Message sent successfully ✅");
