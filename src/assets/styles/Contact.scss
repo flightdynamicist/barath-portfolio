@@ -1,47 +1,73 @@
+/* ICON */
 .contact_wrapper svg {
   font-size: 1em;
   vertical-align: middle;
   margin-right: 5px;
 }
 
+/* FORM */
 .contact-form {
   padding-top: 20px;
-
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
-  }
-
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
-
-  fieldset {
-    background-color: white;
-  }
 }
 
-label {
+/* BUTTON */
+.contact-form button {
+  float: right;
+  background-color: white;
+  color: #050f0b;
+}
+
+.contact-form button:hover {
+  background-color: #5000ca;
+  color: white;
+}
+
+/* FIX: INPUT TEXT VISIBILITY */
+.contact-form .MuiInputBase-input {
+  color: black !important;
+}
+
+/* FIX: LABEL VISIBILITY */
+.contact-form .MuiInputLabel-root {
+  color: black !important;
+}
+
+/* OPTIONAL: BORDER + BACKGROUND CLEAN */
+.contact-form .MuiOutlinedInput-root {
+  background-color: white;
+  border-radius: 6px;
+}
+
+/* REMOVE GLOBAL FIELDSET ISSUE (important) */
+/* DO NOT USE global fieldset — restrict it */
+.contact-form fieldset {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* LABEL STYLE */
+.contact-form label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
 }
 
+/* FLEX ROW */
 .form-flex {
   display: flex;
   gap: 15px;
   padding-bottom: 15px;
 }
 
+/* INPUT WIDTH */
 .form-flex .MuiFormControl-root {
   width: 100%;
 }
 
+/* FORM FULL WIDTH */
 form {
   width: 100% !important;
 }
 
+/* MESSAGE BOX */
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
