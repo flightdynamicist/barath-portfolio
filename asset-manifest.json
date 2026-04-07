@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/barath-portfolio/static/css/main.1c5d7a85.css",
-    "main.js": "/barath-portfolio/static/js/main.b39023a6.js",
+    "main.js": "/barath-portfolio/static/js/main.54a59a3a.js",
     "static/js/453.87020229.chunk.js": "/barath-portfolio/static/js/453.87020229.chunk.js",
     "static/media/bg-light.png": "/barath-portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/reentry_plot.png": "/barath-portfolio/static/media/reentry_plot.3ae0a6846703a662adb6.png",
     "static/media/bg-dark.png": "/barath-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/mock07.png": "/barath-portfolio/static/media/mock07.61bd486a54bf6e17ee5a.png",
-    "static/media/mock10.png": "/barath-portfolio/static/media/mock10.61bd486a54bf6e17ee5a.png",
     "static/media/barath-center-zoom.jpeg": "/barath-portfolio/static/media/barath-center-zoom.abfad30876014a6e074e.jpeg",
     "index.html": "/barath-portfolio/index.html",
     "main.1c5d7a85.css.map": "/barath-portfolio/static/css/main.1c5d7a85.css.map",
-    "main.b39023a6.js.map": "/barath-portfolio/static/js/main.b39023a6.js.map",
+    "main.54a59a3a.js.map": "/barath-portfolio/static/js/main.54a59a3a.js.map",
     "453.87020229.chunk.js.map": "/barath-portfolio/static/js/453.87020229.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c5d7a85.css",
-    "static/js/main.b39023a6.js"
+    "static/js/main.54a59a3a.js"
   ]
 }
