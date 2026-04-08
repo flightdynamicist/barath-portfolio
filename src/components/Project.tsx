@@ -20,7 +20,7 @@ function Project() {
         <div className="projects-grid">
             <div className="project">
                 <img src={eng01} className="zoom" alt="thumbnail" width="100%"/>
-                <h2>Atmospheric Re-entry and Controlled Landing</h2>
+                <h2>Spacecraft Re-entry and Controlled Landing</h2>
                 <p> Physics-based simulation of atmospheric re-entry and controlled descent.
                     Modelled trajectory evolution, aerodynamic forces, and thermal loading at a conceptual level.
                     Includes phase-wise descent behavior from de-orbit to touchdown for system-level analysis </p>
