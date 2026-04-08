@@ -19,13 +19,15 @@ function Project() {
         <h1>Project Insights</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={eng01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <img src={eng01} className="zoom" alt="thumbnail" width="100%"/>
+                <h2>Atmospheric Re-entry and Controlled Landing</h2>
+                <p> Physics-based simulation of atmospheric re-entry and controlled descent.
+                    Modelled trajectory evolution, aerodynamic forces, and thermal loading at a conceptual level.
+                    Includes phase-wise descent behavior from de-orbit to touchdown for system-level analysis </p>
             </div>
             <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
+                <img src={mock07} className="zoom" alt="thumbnail" width="100%"/>
+                <h2>Datum: Integrated Learning Platform</h2>
                 <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
             </div>
         </div>
