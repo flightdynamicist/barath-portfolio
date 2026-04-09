@@ -24,7 +24,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Spacecraft GNC & Mission Design</h3>
             <h4 className="vertical-timeline-element-subtitle">Independent Consultant</h4>
             <p>
-            Advised  teams on  Atmospheric re-entry, descent & landing (EDL) for microgravity studies, Guided high fidelity simulations for Rendezvous, Proximity & Docking Operations
+            Advised  teams on  Atmospheric re-entry, descent & landing (EDL) for microgravity studies, Guided development of high fidelity simulations for spacecraft Rendezvous, Proximity & Docking Operations
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -36,7 +36,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Senior AOCS Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">Pixxel Space</h4>
             <p>
-            Led AOCS design and analysis for high-resolution Earth observation satellites, enabling agile imaging operations, Supported Software/Hardware testing and coordinated across AOCS, Propulsion, Structures, and Flight Software
+            Led AOCS design and analysis for high-resolution Earth observation satellites, enabling agile imaging operations
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -48,7 +48,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Principal Systems Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">TeamIndus, Axiom Research Labs</h4>
             <p>
-            Systems Engineering for commerical proposals, payload compliance, mission design and satellite development, Led the GNC and mission design team for Lunar south-pole constellation program
+            Systems Engineering for commerical proposals, payload requirements compliance, and satellite development, Led the GNC and mission design team for development of Lunar  constellation program
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -59,7 +59,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Senior GNC Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">TeamIndus, Axiom Research Labs</h4>
-            <p> Team that was initially awarded $97 million to engineer moon lander by NASA CLPS program <a href="https://www.firstpost.com/tech/science/team-indus-partner-orbitbeyond-drops-out-of-nasa-contract-for-2020-moon-lander-mission-7085241.html" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faUpRightFromSquare} className="external-link-icon" /></a>, Led Processor / Hardware in loop test campaigns from GNC end in integrating real-time simulators with lander software/hardware for flight readiness</p>
+            <p> Part of the team that was initially awarded $97 million to engineer moon lander (via OrbitBeyond Consortium) by NASA CLPS program <a href="https://www.firstpost.com/tech/science/team-indus-partner-orbitbeyond-drops-out-of-nasa-contract-for-2020-moon-lander-mission-7085241.html" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faUpRightFromSquare} className="external-link-icon" /></a>, Led processor / hardware in loop test campaigns from GNC team side for lander flight readiness</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
