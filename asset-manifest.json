@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/barath-portfolio/static/css/main.1c5d7a85.css",
-    "main.js": "/barath-portfolio/static/js/main.69bc35cf.js",
+    "main.js": "/barath-portfolio/static/js/main.aa62d7b6.js",
     "static/js/453.87020229.chunk.js": "/barath-portfolio/static/js/453.87020229.chunk.js",
     "static/media/earth-moon-transfer_watermark.png": "/barath-portfolio/static/media/earth-moon-transfer_watermark.4604657709653b65a51d.png",
     "static/media/bg-light.png": "/barath-portfolio/static/media/bg-light.bac0efb485244a522981.png",
@@ -10,11 +10,11 @@
     "static/media/barath-center-zoom.jpeg": "/barath-portfolio/static/media/barath-center-zoom.abfad30876014a6e074e.jpeg",
     "index.html": "/barath-portfolio/index.html",
     "main.1c5d7a85.css.map": "/barath-portfolio/static/css/main.1c5d7a85.css.map",
-    "main.69bc35cf.js.map": "/barath-portfolio/static/js/main.69bc35cf.js.map",
+    "main.aa62d7b6.js.map": "/barath-portfolio/static/js/main.aa62d7b6.js.map",
     "453.87020229.chunk.js.map": "/barath-portfolio/static/js/453.87020229.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c5d7a85.css",
-    "static/js/main.69bc35cf.js"
+    "static/js/main.aa62d7b6.js"
   ]
 }
