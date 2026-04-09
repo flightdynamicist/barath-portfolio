@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/barath-portfolio/static/css/main.1c5d7a85.css",
-    "main.js": "/barath-portfolio/static/js/main.37da2a0d.js",
+    "main.js": "/barath-portfolio/static/js/main.69bc35cf.js",
     "static/js/453.87020229.chunk.js": "/barath-portfolio/static/js/453.87020229.chunk.js",
+    "static/media/earth-moon-transfer_watermark.png": "/barath-portfolio/static/media/earth-moon-transfer_watermark.4604657709653b65a51d.png",
     "static/media/bg-light.png": "/barath-portfolio/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/reentry_plot.png": "/barath-portfolio/static/media/reentry_plot.bca6e5a7d2a80d08ba4c.png",
+    "static/media/reentry_plot_watermark.png": "/barath-portfolio/static/media/reentry_plot_watermark.305b84c5baa8c8553cef.png",
     "static/media/bg-dark.png": "/barath-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/mock07.png": "/barath-portfolio/static/media/mock07.61bd486a54bf6e17ee5a.png",
     "static/media/barath-center-zoom.jpeg": "/barath-portfolio/static/media/barath-center-zoom.abfad30876014a6e074e.jpeg",
     "index.html": "/barath-portfolio/index.html",
     "main.1c5d7a85.css.map": "/barath-portfolio/static/css/main.1c5d7a85.css.map",
-    "main.37da2a0d.js.map": "/barath-portfolio/static/js/main.37da2a0d.js.map",
+    "main.69bc35cf.js.map": "/barath-portfolio/static/js/main.69bc35cf.js.map",
     "453.87020229.chunk.js.map": "/barath-portfolio/static/js/453.87020229.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c5d7a85.css",
-    "static/js/main.37da2a0d.js"
+    "static/js/main.69bc35cf.js"
   ]
 }
